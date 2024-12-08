@@ -73,7 +73,7 @@ app.get('/todo', function (req, res) {
         if (todoIdx != '' && editTodo != '') {
             todolist[todoIdx] = editTodo;
         }
-        res.redirect('/todo');
+        res.redirect('/todo'); 
     })
     /* Redirects to the to do list if the page requested is not found */
     .use(function (req, res, next) {
